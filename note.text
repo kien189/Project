@@ -1,0 +1,5 @@
+1. evn
+    => Tạo DB
+2. Cấu hình Pusher (trong file env)
+    BROADCAST_DRIVER = Pusher
+    PUSHER_APP_ID= "17

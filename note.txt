@@ -1,0 +1,28 @@
+1. env
+    Tạo db
+2. Cấu hình pusher ( trong file env)
+    BROADCAST_DRIVER = pusher
+    app_id = "1814396"
+    key = "ee084c569e9543937fd0"
+    secret = "10ac6f01897bd29fb572"
+    cluster = "ap1"
+
+3.Cấu hình bảng user
+
+4. Tạo chức năng đăng ký đăng nhập bằng câu lệnh
+    -php artisan ui bootsrap
+    -php artisan ui bootsrap --auth
+
+5. Chạy câu lệnh pusher
+    - composer require pusher/pusher-php-server
+
+6.  npm install
+    npm install --save-dev laravel-echo pusher-js
+
+7.  Chạy server và run dev
+    php artisan serve
+    npm run dev
+
+Tạo ra 10 user ngẫu nhiên bằng database->seeders->databaseseeder
+ Bỏ commet \App\Models\User::factory(10)->create();
+ Sau đó chạy câu lệnh php artisan db:seed 
